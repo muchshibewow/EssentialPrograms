@@ -1,7 +1,6 @@
 #Implementation of insertion sort, courtesy CLRS
 
 import subprocess
-import os
 
 def InsertionSort(arr):
 	key=0
