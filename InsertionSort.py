@@ -15,10 +15,7 @@ def InsertionSort(arr):
 
 	return arr
 
-if(os.name=='nt'):
-	subprocess.run("cls",shell=True)
-else:
-	subprocess.run("clear",shell=True)
+subprocess.run("clear",shell=True)
 arr=list(map(int,input("Enter your array : ").strip().split()))
 s_arr=InsertionSort(arr)
 print(arr)
