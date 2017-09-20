@@ -1,7 +1,6 @@
 // Sieve of Eratosthenes implementation in C++.
 
 #include<iostream>
-#include<math.h>
 
 using namespace std;
 
