@@ -7,7 +7,7 @@ using namespace std;
 
 int main()
 {
-	long n;
+	long n,i,j;
 	cout<<"Enter number : ";
 	cin>>n;
 	bool primes[n+1];
@@ -25,15 +25,15 @@ int main()
 	primes[0]=false;
 	primes[1]=false;
 
-	for(auto i=2;i*i<=n;++i)
+	for(i=2;i*i<=n;i++)
 	{
-		for(auto j=i*i;j<=n;j+=i)
+		for(j=i*i;j<=n;j+=i)
 		{
 			primes[j]=false;
 		}
 	}
 
-	for(auto i=2;i<=n;++i)
+	for(i=2;i<=n;i++)
 	{
 		if(primes[i])
 		{
