@@ -14,10 +14,16 @@ def SieveofEratosthenes(n):
 
 	return bool_l
 
-N=int(input("Enter number : "))
+N=int(input("\nEnter number : "))
+print()
 primes=SieveofEratosthenes(N//2)
 prime_factors=[i for i in range(2,(N//2)+1) if N%i==0 and primes[i]==True]
-print(prime_factors)
+if(not prime_factors):
+	print("Prime")
+	exit()
+print("Factors : ",prime_factors)
+print()
+print("Factorization : ")
 prime_dct={}
 for factor in prime_factors:
 	prime_dct[factor]=0
@@ -29,6 +35,9 @@ for factor in prime_factors:
 			N_copy=int(N_copy/factor)
 		else:
 			break
+s=''
+for factor in sorted(list(prime_dct.keys())):
+	s+='('+str(factor)+'^'+str(prime_dct[factor])+')'+'x'
 
-for factor in prime_dct.keys():
-	print(factor,' : ',prime_dct[factor])
+print(s[:len(s)-1])
+print()
