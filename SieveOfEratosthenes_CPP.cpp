@@ -13,7 +13,7 @@ int main()
 
 	// Initialising the primes array, assuming every number is a prime.
 
-	for(auto x:primes)
+	for(auto &x:primes)
 	{
 		x=true;
 	}

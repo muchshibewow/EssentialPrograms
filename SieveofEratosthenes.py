@@ -16,4 +16,6 @@ N=int(input("Enter the range of the sieve : "))
 sieve=SieveofEratosthenes(N)
 for n in range(N+1):
 	if(sieve[n]):
-		print(n)
+		sys.stdout.write(str(n)+' ')
+print 
+
