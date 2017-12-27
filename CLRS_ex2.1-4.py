@@ -1,3 +1,4 @@
+#! /usr/bin/env python3
 # CLRS ex 2.1-4 solution
 # Note: This program only works for adding 2 numbers with the same number of bits in their binary representations.
 # i.e both A and B have to be less than the same value of 2**k, where k is any positive integer >=0.

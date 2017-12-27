@@ -1,3 +1,4 @@
+#! /usr/bin/env python3
 # A simple program I wrote to understand the Sieve of Eratosthenes method for generating primes.
 
 import math,sys

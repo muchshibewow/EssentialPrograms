@@ -1,3 +1,5 @@
+#! /usr/bin/env python3
+
 # Program to print the number as a product of the powers of its prime factors
 # Example: 36 = 2^2 * 3^2, 40 =2^3 * 5^1
 # Disclaimer : Gets stuck with larger numbers. I tried it randomly with a number

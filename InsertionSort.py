@@ -1,3 +1,4 @@
+#! /usr/bin/env python3
 #Implementation of insertion sort, courtesy CLRS
 
 import subprocess
