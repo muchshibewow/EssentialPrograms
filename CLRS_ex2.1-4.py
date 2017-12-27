@@ -26,5 +26,3 @@ if(len(A)!=len(B)):
 	exit()
 C='0b'+''.join(list(map(str,add_bin(A,B))))
 print("Sum = "+C+' '+str(int(C,base=2)))
-input("Press Enter")
-subprocess.run("cls",shell=True)
