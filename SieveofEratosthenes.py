@@ -2,6 +2,7 @@
 # A simple program I wrote to understand the Sieve of Eratosthenes method for generating primes.
 
 import math,sys
+from subprocess import run
 def SieveofEratosthenes(n):
 	bool_l=[True for i in range(n+1)]
 	bool_l[0]=bool_l[1]=False
@@ -13,6 +14,7 @@ def SieveofEratosthenes(n):
 	return bool_l
 
 #This is just driver extra code
+run("clear",shell=True)
 N=int(input("Enter the range of the sieve : "))
 sieve=SieveofEratosthenes(N)
 for n in range(N+1):

@@ -6,6 +6,7 @@
 # of the order of 10^12, and it effectively stopped my pc.
 # I guess this program works normally if the number is of the order of 10^7.
 import math
+from subprocess import run
 def SieveofEratosthenes(n):
 	bool_l=[True for i in range(n+1)]
 	bool_l[0]=bool_l[1]=False
@@ -16,6 +17,7 @@ def SieveofEratosthenes(n):
 
 	return bool_l
 
+run("clear",shell=True)
 N=int(input("\nEnter number : "))
 print()
 primes=SieveofEratosthenes(N//2)

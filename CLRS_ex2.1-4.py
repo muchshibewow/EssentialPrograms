@@ -3,7 +3,7 @@
 # Note: This program only works for adding 2 numbers with the same number of bits in their binary representations.
 # i.e both A and B have to be less than the same value of 2**k, where k is any positive integer >=0.
 
-import subprocess
+from subprocess import run
 
 def add_bin(A,B):
 	carry=0
@@ -18,7 +18,7 @@ def add_bin(A,B):
 	C.insert(0,carry)
 	return C
 
-subprocess.run("clear",shell=True)
+run("clear",shell=True)
 A=list(map(int,bin(int(input("Enter first number : ")))[2:]))
 B=list(map(int,bin(int(input("Enter second number : ")))[2:]))
 if(len(A)!=len(B)):

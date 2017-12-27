@@ -1,7 +1,7 @@
 #! /usr/bin/env python3
 #Implementation of insertion sort, courtesy CLRS
 
-import subprocess
+from subprocess import run
 
 def InsertionSort(arr):
 	key=0
@@ -15,7 +15,7 @@ def InsertionSort(arr):
 
 	return arr
 
-subprocess.run("clear",shell=True)
+run("clear",shell=True)
 arr=list(map(int,input("Enter your array : ").strip().split()))
 s_arr=InsertionSort(arr)
 print(arr)
